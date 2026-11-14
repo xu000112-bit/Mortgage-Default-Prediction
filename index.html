@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Manim Slides</title>
+<link href="Mortgage_Default_assets\reveal.css" rel="stylesheet"/>
+<link href="Mortgage_Default_assets\black.css" rel="stylesheet"/>
+<!-- Theme used for syntax highlighting of code -->
+<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+<link href="Mortgage_Default_assets\zenburn.css" rel="stylesheet"/>
+<!-- <link rel="stylesheet" href="index.css"> -->
+<style id="qa-aligned-styles">
+/* Q&A hotspots: viewport-fixed sibling of Reveal, NEVER a child of its scaled sections. */
+#qa-video-map {
+  position:fixed; top:0; left:0; width:0; height:0;
+  display:none; z-index:2147483600; pointer-events:none;
+}
+#qa-video-map .qa-tile {
+  position:absolute; box-sizing:border-box; transform:translate(-50%,-50%);
+  appearance:none; border:2px solid transparent; border-radius:10px;
+  background:transparent; padding:0; margin:0; cursor:pointer;
+  pointer-events:auto; transition:border-color .12s, background-color .12s;
+}
+#qa-video-map .qa-tile:hover,
+#qa-video-map .qa-tile:focus-visible {
+  border-color:#ffce65; background-color:rgba(255,206,101,.09); outline:none;
+}
+#qa-video-map .qa-tooltip {
+  display:block; position:absolute; left:50%; bottom:calc(100% + 4px);
+  transform:translateX(-50%); pointer-events:none;
+  padding:5px 9px; border:1px solid #ffce65; border-radius:6px;
+  color:white; background:rgba(5,12,22,.97); opacity:0;
+  white-space:nowrap; font:600 13px Georgia,serif;
+}
+#qa-video-map .qa-tile:hover .qa-tooltip,
+#qa-video-map .qa-tile:focus-visible .qa-tooltip {opacity:1;}
+#qa-return-button {
+  position:fixed; right:18px; top:14px; z-index:2147483601;
+  display:none; background:rgba(8,15,23,.94); color:white;
+  border:1px solid #53c9f7; border-radius:8px; padding:8px 14px;
+  font:600 15px Georgia,serif; cursor:pointer;
+}
+#qa-return-button:hover,#qa-return-button:focus-visible {
+  outline:2px solid #ffce65; background:#193044;
+}
+#qa-hint {
+  position:fixed; bottom:13px; left:50%; transform:translateX(-50%);
+  z-index:2147483601; display:none; pointer-events:none;
+  padding:6px 13px; border-radius:8px; color:#c5c8cf;
+  background:rgba(8,15,23,.82); font:600 13px Georgia,serif;
+}
+body.qa-review-open #qa-video-map {display:block;}
+body.qa-review-open #qa-hint {display:block;}
+body.qa-review-departed #qa-return-button {display:block;}
+/* Optional diagnostic: append ?qa_debug=1 to the HTML URL. */
+body.qa-debug #qa-video-map .qa-tile {
+  border-color:rgba(83,201,247,.85);
+  background:rgba(83,201,247,.055);
+}
+</style></head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f8f315f94e2ecd64.mp4" data-background-video-muted="">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6d58165d7a23a716.mp4" data-background-video-loop="">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d046707330e1d09a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/bbe46408964e23f3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/7ca0269383dab452.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/51d03d7b95c3d73b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8477b8834f5a3a9a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ec690e4f070b5a75.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e9bff0e83df37472.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/104c70799928a928.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/30ddd567cfe28b5c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1a7d0e34202cce1f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b493ecb2f1b73a29.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0d359e6ac74fe98b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d1b880fc6c432c44.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/acdd0ce988972eed.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0e36e7d71e030faa.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/655e77411fbf13cd.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/903f38835894f846.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5631069f290db667.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a22020e619509794.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0a327fbbc7ce9703.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e9151d87d20fc1ee.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/46926c3d2fc40198.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/85838d98e2e45534.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/7a87993e945f1b17.mp4" data-background-video-loop="">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/adc67908aa6d6a1d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c296b2cd6672e31c.mp4" data-background-video-loop="">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8896d26ff3a1e5c5.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/75f080d2ca3eafed.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8d297b4e6b1bcce3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/bcb8ec81950f8818.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6319172604311d23.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0b568bdbed7022a1.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f3fb23e2f22c307a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f4081c8f234dea3e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/707e8af792f8158b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9f5d1022998cb80e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/46763f794c10581f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9877576a3be20e26.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/22a7a7f768870c9a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/992d10bc39eae067.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/507c695874989d59.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8bc376f2b1b71554.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0c251d2f4d4f197c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/956abf1885dae94f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e71cd51ccee1337d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/2355fbb468608799.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/4277937affcb57ab.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/720ec04da03f1059.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/fbc3080894daf7ed.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/253cd6887a208e1b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d93a5a074f9fa97e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d50219eba4cbff6a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b9545eca86ec607a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9ea08707263c7c07.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/02eefc0a6a4bf12a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/91fc2926ca8ffa4d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/cc409ac7f4c005f9.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/aa4e7e1da96cd614.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0465debec0716ea9.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/55850b6a690fb460.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/7df49e1c5debb84c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/40c97cdccc8d7fdc.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/2cda21d2bf55431e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/fc09068abf4e61ad.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9523ad4d25319ce8.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/2cec6b639dc8ba77.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/2dd4bbe54fa12149.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ad2b840bde665614.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/fb5bb0f3f9b93210.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/86e32c2daf99567d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5c209049609f7948.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5f6f8c77d3faddfb.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/dc5dd87820ee4a08.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/20eaae8ab476c8c2.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/720a59f9407e74dc.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ec5555849456fa29.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1d0f27b295e21aba.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/98ca9d27e3b192d9.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/7eee29ebc40acb22.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/17a21b3a6cc57dae.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ce2cf23b0cee01f3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/237fe37fc355bcb3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/87518b1bbe68d76d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e924d8108feb6cef.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1762b9dc3fcb49eb.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/72aaf2a1f1893571.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0f86c6f73240cf86.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f5def9051bf0e12a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e91ea6620c33bfed.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b5f4ea9d347d4ebe.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c84981bdb6f3cf52.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/21f294dc35daed0f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/acdd478ef4361a28.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/bd95395ab54b311f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1a3202c42d040536.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/dd007e29a739b082.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/854fbd6202976e9b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c2811aea0426e1bf.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5ed519be42a0d5fb.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e750708826f0dd78.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8eeca105fbe7596e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8703476a4cdaa9ea.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/57d44f348c67f3ef.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c0b962f8dbb7cef0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c17a7a9944c73023.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/64f1e1ac638b2c96.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b645cc0bd30708f9.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1545cc4bd7b7fc60.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f9dcff260b69853f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/93c0379131147a1b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1fa27f229db38aa8.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8003f0278b09592c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e4c62f10d2cc18c8.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6b84e4f2f8cc2488.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b1316f0b26b2e105.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a2836c9ff9a782c0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a41bb04b9bf0323d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/39ffb84399e14cb8.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e994fdafc10f2401.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8012dfa80ca3efee.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/75fa8f58d757634f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/37bca555ebd1bc36.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/bca2a49f10d506fa.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/fc6250ce208dfcc7.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1626fa72d90a7600.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/66b69d00bb95ceca.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5c885c92116355d3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/cbde57e7f7d4e6ab.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c0c6f153cf52632d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/68acd6edcbc92323.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0eb72c674f7fae7b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/7760603a5038b138.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b84a8254c111a838.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/635724ca1d49a68b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/cf6e84cffa36cbfb.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9e11f65e24328bac.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/68635eee39bab62e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/81f2e366c418fd8f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8149e2eb7e6f594c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3e92e73f875ace9c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e0c9b58546434edf.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/06a37eefafb5c12b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/0e10e612470fec0f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/246d7bf3703bfeac.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d234343fdac67f1d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a6066d85a8c197e2.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/872b08de7a835b9d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f1405ea3d0077858.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d1d7120b2e7bf6c4.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/39d581b4fb78b9e0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/14472475354cea37.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8047edc69743fa3b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/9cf0315f80dd1d61.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3447b9226a2c2c89.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/51993e1145300e45.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f47b60e0796bc826.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5b38c7d47fa038d2.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3c95e145f7a30b6a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/79db0a1b7b033a9d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/737e3a0e2a265630.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1639dc009fbba7b2.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3fb68984eeca5b81.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f70f0b1578e9aefc.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8ae04ea50ed623f4.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/2bf8b8183b441770.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e24148652f03d622.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6d17dec53a49e0bf.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a70eda4b7b730c7d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/70531930ed886d36.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6e74a60b43f927ae.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b40cc84076353868.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e3458b247d4df563.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6b12758970c74050.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/b4c00070f4710815.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/35e21d8f6252189a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/982264622b4a4878.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/4b71763be17ab7b5.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ac67430d05212163.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/98b1fed6fc6facb1.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/bdc5e91beb50ef3c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ba8a5bd567f6a33f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/428fdc7cddfdae90.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/260e4933e6e59e89.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/53b9181f690a3898.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/27120024be2063d2.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/fb2c225ee3da44fe.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/ae7b6808de4ae159.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/06556da879fea6c5.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a6449b09ed311b70.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f47b437615c8558e.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/c51e6b1c91c9c5ab.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e5c6905c2e5e3d0d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d0ed097ebcf0c3d0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1fcf2b2b01c12de6.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5800317694788791.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8e2e318cd34e00a3.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6a4dbf5a035d7271.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/4fbbe114da1d0ad4.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3fa25a759254f545.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/44eacb03f44af09f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6ff166f07ab066c0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/04874ff50e442891.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/4b357364dd343329.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/956b2f38a53481fa.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1b67bda4cb582e01.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/33d91e6b45df6d7c.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/51e576f9987b6dde.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3ff9ecb853067aec.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/29d193f6e426ac46.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5d0c3509b2a763c0.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/e467ebfc381bba4a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/4263928aa39a30bb.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/dd1b816f02d09e48.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/f571354beedbb12f.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5beab420fba7548d.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/5e9852c4d47783ff.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/624436e0620de085.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/acbd6f3dadbfa059.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/90182e30f8a7b970.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/3e8828100b19861a.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6650cbdfcd3026da.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d605553c39b8022b.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/1244bc34cc401576.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/8d2dffb3e391fc93.mp4">
+</section>
+<section data-autoslide="650.0" data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/d0b8fdc381d828f6.mp4">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/6e6a4d572e830759.mp4" data-background-video-loop="">
+</section>
+<section data-background-color="black" data-background-size="contain" data-background-video="Mortgage_Default_assets/a643c8a78fe1d554.mp4">
+</section>
+</div>
+</div>
+<script src="Mortgage_Default_assets\reveal.js"></script>
+<script src="Mortgage_Default_assets\notes.js"></script>
+<!-- To include plugins, see: https://revealjs.com/plugins/ -->
+<!-- <script src="index.js"></script> -->
+<script>
+      Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will
+        // be preserved when the presentation is scaled to fit different
+        // resolutions. Can be specified using percentage units.
+        width: '100%',
+        height: '100%',
+        // Factor of the display size that should remain empty around
+        // the content
+        margin: 0.04,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0,
+        // Display presentation control arrows
+        controls: false,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: false,
+        // Display the page number of the current slide
+        // - true:    Show slide number
+        // - false:   Hide slide number
+        //
+        // Can optionally be set as a string that specifies the number formatting:
+        // - "h.v":   Horizontal . vertical slide number (default)
+        // - "h/v":   Horizontal / vertical slide number
+        // - "c":   Flattened slide number
+        // - "c/t":   Flattened slide number / total slides
+        //
+        // Alternatively, you can provide a function that returns the slide
+        // number for the current slide. The function should take in a slide
+        // object and return an array with one string [slideNumber] or
+        // three strings [n1,delimiter,n2]. See #formatSlideNumber().
+        slideNumber: false,
+        // Can be used to limit the contexts in which the slide number appears
+        // - "all":      Always show the slide number
+        // - "print":    Only when printing to PDF
+        // - "speaker":  Only in the speaker view
+        showSlideNumber: 'all',
+        // Use 1 based indexing for # links to match slide number (default is zero
+        // based)
+        hashOneBasedIndex: false,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: false,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: false,
+        // Enable support for jump-to-slide navigation shortcuts
+        jumpToSlide: true,
+        // Push each slide change to the browser history.  Implies `hash: true`
+        history: false,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Optional function that blocks keyboard events when retuning false
+        //
+        // If you set this to 'focused', we will only capture keyboard events
+        // for embedded decks when they are in focus
+        keyboardCondition: null,
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Changes the behavior of our navigation directions.
+        //
+        // "default"
+        // Left/right arrow keys step between horizontal slides, up/down
+        // arrow keys step between vertical slides. Space key steps through
+        // all slides (both horizontal and vertical).
+        //
+        // "linear"
+        // Removes the up/down arrows. Left/right arrows step through all
+        // slides (both horizontal and vertical).
+        //
+        // "grid"
+        // When this is enabled, stepping left/right from a vertical stack
+        // to an adjacent vertical stack will land you at the same vertical
+        // index.
+        //
+        // Consider a deck with six slides ordered in two vertical stacks:
+        // 1.1    2.1
+        // 1.2    2.2
+        // 1.3    2.3
+        //
+        // If you're on slide 1.3 and navigate right, you will normally move
+        // from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
+        // from 1.3 -> 2.3.
+        navigationMode: 'default',
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+        // Flags if we should show a help overlay when the question-mark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null:   Media will only autoplay if data-autoplay is present
+        // - true:   All media will autoplay, regardless of individual setting
+        // - false:  No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes
+        // - null:   Iframes with data-src AND data-preload will be loaded when within
+        //           the viewDistance, iframes with only data-src will be loaded when visible
+        // - true:   All iframes with data-src will be loaded when within the viewDistance
+        // - false:  All iframes with data-src will be loaded only when visible
+        preloadIframes: null,
+        // Can be used to globally disable auto-animation
+        autoAnimate: true,
+        // Optionally provide a custom element matcher that will be
+        // used to dictate which elements we can animate between.
+        autoAnimateMatcher: null,
+        // Default settings for our auto-animate transitions, can be
+        // overridden per-slide or per-element via data arguments
+        autoAnimateEasing: 'ease',
+        autoAnimateDuration: 1.0,
+        autoAnimateUnmatched: true,
+        // CSS properties that can be auto-animated. Position & scale
+        // is matched separately so there's no need to include styles
+        // like top/right/bottom/left, width/height or margin.
+        autoAnimateStyles: ['opacity', 'color', 'background-color', 'padding', 'font-size', 'line-height', 'letter-spacing', 'border-width', 'border-color', 'border-radius', 'outline', 'outline-offset'],
+        // Controls automatic progression to the next slide
+        // - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
+        //           is present on the current slide or fragment
+        // - 1+:     All slides will progress automatically at the given interval
+        // - false:  No auto-sliding, even if data-autoslide is present
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding (defaults to navigateNext)
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Opens links in an iframe preview overlay
+        // Add `data-preview-link` and `data-preview-link="false"` to customize each link
+        // individually
+        previewLinks: false,
+        // Exposes the reveal.js API through window.postMessage
+        postMessage: true,
+        // Dispatches all reveal.js events to the parent window through postMessage
+        postMessageEvents: false,
+        // Focuses body when page changes visibility to ensure keyboard shortcuts work
+        focusBodyOnPageVisibilityChange: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // The maximum number of pages a single slide can expand onto when printing
+        // to PDF, unlimited by default
+        pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+        // Prints each fragment on a separate slide
+        pdfSeparateFragments: true,
+        // Offset used to reduce the height of content within exported PDF pages.
+        // This exists to account for environment differences based on how you
+        // print to PDF. CLI printing options, like phantomjs and wkpdf, can end
+        // on precisely the total height of the document whereas in-browser
+        // printing has to end one pixel before.
+        pdfPageHeightOffset: -1,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000
+      });
+      // Override SPACE to play / pause the video
+      Reveal.addKeyBinding(
+        {
+          keyCode: 32,
+          key: 'SPACE',
+          description: 'Play / pause video'
+        },
+        () => {
+          var currentVideos = Reveal.getCurrentSlide().slideBackgroundContentElement.getElementsByTagName("video");
+          if (currentVideos.length > 0) {
+            if (currentVideos[0].paused == true) currentVideos[0].play();
+            else currentVideos[0].pause();
+          } else {
+            Reveal.next();
+          }
+        }
+      );
+    </script>
+<div aria-label="Interactive Q&amp;A navigation hotspots" id="qa-video-map"><button aria-label="Jump to Mortgage Lending" class="qa-tile" data-qa-target="2" style="left:14.9140625%;top:24.5000000%;width:21.5332031%;height:20.5800000%" title="Mortgage Lending: click to revisit" type="button"><span class="qa-tooltip">Mortgage Lending ↗</span></button><button aria-label="Jump to Financial Variables" class="qa-tile" data-qa-target="17" style="left:38.3281250%;top:24.5000000%;width:21.5332031%;height:20.5800000%" title="Financial Variables: click to revisit" type="button"><span class="qa-tooltip">Financial Variables ↗</span></button><button aria-label="Jump to Historical Data" class="qa-tile" data-qa-target="31" style="left:61.6718750%;top:24.5000000%;width:21.5332031%;height:20.5800000%" title="Historical Data: click to revisit" type="button"><span class="qa-tooltip">Historical Data ↗</span></button><button aria-label="Jump to Logistic Regression" class="qa-tile" data-qa-target="39" style="left:85.0859375%;top:24.5000000%;width:21.5332031%;height:20.5800000%" title="Logistic Regression: click to revisit" type="button"><span class="qa-tooltip">Logistic Regression ↗</span></button><button aria-label="Jump to Decision Tree" class="qa-tile" data-qa-target="65" style="left:14.9140625%;top:50.0000000%;width:21.5332031%;height:20.5800000%" title="Decision Tree: click to revisit" type="button"><span class="qa-tooltip">Decision Tree ↗</span></button><button aria-label="Jump to Random Forest" class="qa-tile" data-qa-target="74" style="left:38.3281250%;top:50.0000000%;width:21.5332031%;height:20.5800000%" title="Random Forest: click to revisit" type="button"><span class="qa-tooltip">Random Forest ↗</span></button><button aria-label="Jump to AlexNet" class="qa-tile" data-qa-target="96" style="left:61.6718750%;top:50.0000000%;width:21.5332031%;height:20.5800000%" title="AlexNet: click to revisit" type="button"><span class="qa-tooltip">AlexNet ↗</span></button><button aria-label="Jump to XGBoost" class="qa-tile" data-qa-target="105" style="left:85.0859375%;top:50.0000000%;width:21.5332031%;height:20.5800000%" title="XGBoost: click to revisit" type="button"><span class="qa-tooltip">XGBoost ↗</span></button><button aria-label="Jump to ResNet" class="qa-tile" data-qa-target="119" style="left:14.9140625%;top:75.5000000%;width:21.5332031%;height:20.5800000%" title="ResNet: click to revisit" type="button"><span class="qa-tooltip">ResNet ↗</span></button><button aria-label="Jump to Brier Score" class="qa-tile" data-qa-target="190" style="left:38.3281250%;top:75.5000000%;width:21.5332031%;height:20.5800000%" title="Brier Score: click to revisit" type="button"><span class="qa-tooltip">Brier Score ↗</span></button><button aria-label="Jump to AUC" class="qa-tile" data-qa-target="203" style="left:61.6718750%;top:75.5000000%;width:21.5332031%;height:20.5800000%" title="AUC: click to revisit" type="button"><span class="qa-tooltip">AUC ↗</span></button><button aria-label="Jump to Calibration" class="qa-tile" data-qa-target="207" style="left:85.0859375%;top:75.5000000%;width:21.5332031%;height:20.5800000%" title="Calibration: click to revisit" type="button"><span class="qa-tooltip">Calibration ↗</span></button></div><button id="qa-return-button" type="button">↩ Back to Review [Q]</button><div id="qa-hint">Q&amp;A · Click a topic to revisit · Press Q to return</div><script id="qa-aligned-script">(function() {
+  'use strict';
+  const TOTAL=229, REVIEW=227;
+  const sections=Array.from(document.querySelectorAll('.reveal .slides > section'));
+  const overlay=document.getElementById('qa-video-map');
+  const returnButton=document.getElementById('qa-return-button');
+  const debug=new URLSearchParams(window.location.search).get('qa_debug')==='1';
+  let qaActive=false;
+  if(debug)document.body.classList.add('qa-debug');
+  if(sections.length!==TOTAL || !sections[REVIEW].hasAttribute('data-background-video-loop')) {
+    console.error('Q&A mapping does not match this export. Navigation disabled.');return;
+  }
+  if(typeof Reveal==='undefined' || typeof Reveal.slide!=='function') {
+    console.error('Reveal.js was not loaded.');return;
+  }
+  function currentIndex() {return sections.indexOf(Reveal.getCurrentSlide());}
+  function isReview() {const n=currentIndex();return n===REVIEW || n===REVIEW+1;}
+
+  // Find the actual visible video element, not a slide-section coordinate system.
+  function currentBackgroundVideo() {
+    const section=Reveal.getCurrentSlide();
+    if(!section)return null;
+    const bg=section.slideBackgroundContentElement;
+    if(bg) {
+      const v=bg.querySelector('video');
+      if(v)return v;
+    }
+    const present=document.querySelector('.reveal .backgrounds .slide-background.present');
+    if(present)return present.querySelector('video');
+    return null;
+  }
+
+  // Translate the video element's real screen rectangle into the visible
+  // 16:9 pixel region, accounting for object-fit contain/cover or letterboxing.
+  function videoContentRect(video) {
+    const r=video.getBoundingClientRect();
+    if(!(r.width>0&&r.height>0))return null;
+    const nativeW=video.videoWidth||16, nativeH=video.videoHeight||9;
+    const fit=getComputedStyle(video).objectFit||'fill';
+    if(fit==='fill') return {x:r.left,y:r.top,w:r.width,h:r.height};
+    const scale=(fit==='cover'||fit==='scale-down'&&nativeW<=r.width&&nativeH<=r.height)
+      ?Math.max(r.width/nativeW,r.height/nativeH)
+      :Math.min(r.width/nativeW,r.height/nativeH);
+    const w=nativeW*scale,h=nativeH*scale;
+    return {x:r.left+(r.width-w)/2,y:r.top+(r.height-h)/2,w,h};
+  }
+
+  // If Reveal has not constructed the background video yet, use its visible
+  // slideshow viewport as a temporary contained 16:9 rectangle and correct
+  // the result when the metadata arrives.
+  function fallbackRect() {
+    const base=document.querySelector('.reveal')||document.documentElement;
+    const r=base.getBoundingClientRect();
+    const w=Math.min(r.width,r.height*16/9), h=w*9/16;
+    return {x:r.left+(r.width-w)/2,y:r.top+(r.height-h)/2,w,h};
+  }
+
+  function align() {
+    if(!isReview())return;
+    const v=currentBackgroundVideo();
+    const r=(v&&videoContentRect(v))||fallbackRect();
+    overlay.style.left=r.x+'px';overlay.style.top=r.y+'px';
+    overlay.style.width=r.w+'px';overlay.style.height=r.h+'px';
+    // Metadata may arrive after the first layout; remeasure then.
+    if(v && !v.__qaAlignmentBound) {
+      v.addEventListener('loadedmetadata',scheduleAlign);
+      v.addEventListener('resize',scheduleAlign);
+      v.__qaAlignmentBound=true;
+    }
+  }
+  let pending=false;
+  function scheduleAlign() {
+    if(pending)return;pending=true;
+    requestAnimationFrame(()=>{pending=false;align();});
+  }
+
+  function updateUI() {
+    const review=isReview();
+    document.body.classList.toggle('qa-review-open',review);
+    document.body.classList.toggle('qa-review-departed',qaActive&&!review);
+    if(review){scheduleAlign();}
+  }
+  function goto(index) {
+    const idx=Number(index);
+    if(!Number.isInteger(idx)||idx<0||idx>=TOTAL)return;
+    qaActive=true;Reveal.slide(idx,0,0);updateUI();
+  }
+  function backToReview(){goto(REVIEW);}
+  overlay.querySelectorAll('.qa-tile').forEach(btn=>btn.addEventListener('click',e=>{
+    e.preventDefault();e.stopPropagation();goto(btn.dataset.qaTarget);
+  }));
+  returnButton.addEventListener('click',e=>{
+    e.preventDefault();e.stopPropagation();backToReview();
+  });
+  document.addEventListener('keydown',e=>{
+    const t=e.target;
+    if(t?.isContentEditable||['INPUT','TEXTAREA'].includes(t?.tagName)||e.altKey||e.ctrlKey||e.metaKey)return;
+    if(e.key.toLowerCase()==='q'){
+      e.preventDefault();e.stopImmediatePropagation();backToReview();
+    }
+  },true);
+  Reveal.on('slidechanged',updateUI);
+  Reveal.on('ready',updateUI);
+  window.addEventListener('resize',scheduleAlign);
+  document.addEventListener('fullscreenchange',scheduleAlign);
+  if(window.visualViewport)window.visualViewport.addEventListener('resize',scheduleAlign);
+  updateUI();
+})();</script></body>
+</html>
