@@ -2,9 +2,6 @@
 
 ### Machine Learning in Finance | Interactive Teaching Demonstration
 
-**Qinzheng Xu**  
-Finance Teaching Demonstration · Carthage College · November 16, 2026
-
 **[▶ View the interactive presentation](https://xu000112-bit.github.io/Mortgage-Default-Prediction/)**
 
 ## Overview
@@ -69,11 +66,5 @@ Mortgage-Default-Prediction/
 
 You can view the lesson directly through **[GitHub Pages](https://xu000112-bit.github.io/Mortgage-Default-Prediction/)**. To run it locally, download or clone the repository, keep `index.html` next to the complete `Mortgage_Default_assets/` folder, and open `index.html` in a modern browser.
 
-## Intended Use
-
-This is an **educational teaching demonstration**, not a production credit-scoring system or a lending decision tool. The examples are designed to make predictive modeling concepts intuitive for undergraduate finance students.
-
 ---
 
-**Prepared and presented by Qinzheng Xu**  
-*Mortgage Default Prediction: Machine Learning in Finance*
